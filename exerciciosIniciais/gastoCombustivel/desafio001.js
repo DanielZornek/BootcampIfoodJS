@@ -5,4 +5,4 @@ const percursoKm = 160;
 const litrosConsumidos = percursoKm / gastoMedioPorKM;
 const gastoTotal = litrosConsumidos * precoCombustivel;
 
-console.log(gastoTotal);
+console.log(gastoTotal.toFixed(3));
