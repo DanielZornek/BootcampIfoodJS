@@ -2,7 +2,7 @@ const precoGasolina = 5.51;
 const precoEtanol = 3.2076;
 const tipoCombustivel = "etanol";
 const gastoMedioPorKM = 9;
-const distancia = 120;
+const distancia = 125;
 let totalGasto;
 
 const litrosGastos = distancia / gastoMedioPorKM;
