@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+:root{
+    --fontRoboto: 'Roboto', sans-serif;
+    --fontMenor: 100;
+    --fontMedia: 300;
+    --fonteGrande: 500;
+    --fonteMaior: 700;
+}
+
+body{
+    background-color: black;
+    font-family: var(--fontRoboto);
+    font-weight: var(--fontMedia);
+    color: #fff;
+}
