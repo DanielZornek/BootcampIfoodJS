@@ -9,9 +9,12 @@
     --fonteMaior: 700;
 }
 
-body{
-    background-color: black;
+*{
     font-family: var(--fontRoboto);
     font-weight: var(--fontMedia);
-    color: #fff;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(201, 199, 199, 0.795);
 }
