@@ -14,9 +14,42 @@ function showPokemonInHTML(pokemon){
                     <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join("")}
                     </ol>
-
                     <img src="${pokemon.photo}" alt="${pokemon.name}">
                 </div>
+
+                <div class="pokemon-details">
+                
+                    <section class="detail-abilities">
+                        <h4>Principal Ability:</h4>
+
+                        <span>${pokemon.mainAbility}<span>
+
+                        <h4>All Abilities:</h4>
+
+                        <span>${pokemon.allAbilities.map((ability) => `<li class="type">${ability}</li>`).join("")}<span>
+                        
+                    </section>
+
+                    <section class="detail-moves">
+                        <h4>Four Moves:</h4>
+                        <span class="detail-moves-move">${pokemon.moves.map((move) => `<li class="type">${move}</li>`).join("")}</span>
+                    </section>
+
+                </div>
+
+                <section class="detail-status">
+                        <h4 class="detail-status-title">Status:</h4>
+                        <hr><br>
+                        <div class="detail-status-log">
+                            <span> ${pokemon.pokemonStatusName.map((statName) => `<li>${statName}:  </li>`).join("")} </span>
+
+                            <span>
+                            ${pokemon.pokemonStatusValue.map((statValue) => `<li>${statValue}</li>`).join("")}
+                            </span>
+                        </div>
+
+                </section>
+
             </li>`;
 }
 

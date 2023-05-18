@@ -5,6 +5,10 @@ class Pokemon{
     name;
     type;
     types = [];
-    photo
-    
+    photo;
+    mainAbility;
+    allAbilities = [];
+    moves = [];
+    pokemonStatusName = [];
+    pokemonStatusValue = []
 }

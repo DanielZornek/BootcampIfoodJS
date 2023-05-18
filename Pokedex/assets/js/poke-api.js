@@ -9,10 +9,32 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
     const [type] = types;
 
-    pokemon.types = types
+    pokemon.types = types;
     pokemon.type = type;
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+
+    const abilitiesList = pokeDetail.abilities.map((abilitySlot) => abilitySlot.ability.name);
+
+    pokemon.mainAbility = pokeDetail.abilities[0].ability.name;
+    pokemon.allAbilities = abilitiesList;
+    
+    const pokemonMoves = pokeDetail.moves.map((moveSlot) => moveSlot.move.name);
+    
+    for(let i = 0; i < 4; i++){
+        pokemon.moves.push(pokemonMoves[i]);
+    }
+
+    //console.log(pokemon.moves);
+
+    const pokemonStatusValue = pokeDetail.stats.map((statSlot) => statSlot.base_stat);
+    const pokemonStatusName = pokeDetail.stats.map((statSlot2) => statSlot2.stat.name);
+
+    pokemon.pokemonStatusName = pokemonStatusName;
+    pokemon.pokemonStatusValue = pokemonStatusValue;
+    
+    console.log(pokemon.pokemonStatusName);
+    console.log(pokemon.pokemonStatusValue);
     
     return pokemon;
 }
@@ -20,7 +42,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
 pokeAPI.getPokemonDetails = (pokemon) => {
     return fetch(pokemon.url)
         .then((response) => response.json())
-        .then(convertPokeApiDetailToPokemon);
+        .then(convertPokeApiDetailToPokemon)
 } 
 
 pokeAPI.getPokemon = (offset = 0, limit = 20) => {
