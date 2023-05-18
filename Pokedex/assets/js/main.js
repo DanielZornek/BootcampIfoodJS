@@ -31,7 +31,7 @@ function showPokemonInHTML(pokemon){
                     </section>
 
                     <section class="detail-moves">
-                        <h4>Four Moves:</h4>
+                        <h4>Some Moves:</h4>
                         <span class="detail-moves-move">${pokemon.moves.map((move) => `<li class="type">${move}</li>`).join("")}</span>
                     </section>
 

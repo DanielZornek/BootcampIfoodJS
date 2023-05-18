@@ -21,7 +21,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     
     const pokemonMoves = pokeDetail.moves.map((moveSlot) => moveSlot.move.name);
     
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i < 6; i++){
         pokemon.moves.push(pokemonMoves[i]);
     }
 
