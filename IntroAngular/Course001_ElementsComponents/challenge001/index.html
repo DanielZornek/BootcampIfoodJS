@@ -11,19 +11,36 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+
+    <!-- <div class="card">
             <div class="card__left">
                 <span>Tomura Shigaraki</span>
                 <a href="#">All for one contrata Devs</a>
                 <p>All For One procura por desenvolvedores que saibam trabalhar com Componentes.</p>
             </div>
             <div class="card__right">
-                <img width="300px" src="assets/allforOne.jpg" alt="">
+                <img class="card__right-img" src="assets/allforOne.jpg" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <card-news></card-news>
+    <card-news 
+        autor="Tomura Shigaraki"
+        title="All For One Contrata" 
+        content="All For One procura por desenvolvedores que saibam trabalhar com Componentes."
+        link-url="https://myheroacademia.fandom.com/wiki/All_For_One"
+        photo="assets/allforOne.jpg"
+    >
+    </card-news>
+
+    <card-news 
+        title="'O preço do café está um absurdo' - Comenta L - maior detetive do mundo" 
+        content="O detetive investigador L está revoltado pelo preço do café estar subindo disparadamente, ainda comenta que Watari está cortando gastos e o café dele está incluso nisso. 'O que me resta é tomar coca-cola' - conclui o maior detetive do mundo."
+        link-url="https://cadernodamorte.fandom.com/pt-br/wiki/L_Lawliet"
+        photo="assets/lawliet.jpg"
+    >
+    </card-news>
+
     <!-- <card-news></card-news>
     <card-news></card-news>
     
@@ -31,5 +48,6 @@
     <titulo-dinamico titulo="Notícia Quente"></titulo-dinamico>
     <titulo-dinamico titulo="Notícia Trágica"></titulo-dinamico>
     -->
+
 </body>
 </html>
