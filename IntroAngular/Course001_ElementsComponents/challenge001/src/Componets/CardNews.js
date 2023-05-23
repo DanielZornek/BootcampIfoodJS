@@ -65,6 +65,7 @@ class CardNews extends HTMLElement{
     styles(){
         const style = document.createElement("style");
         style.textContent = `
+        
             .card{
                 width: 100%;
                 /* border: 1px solid #000; */
