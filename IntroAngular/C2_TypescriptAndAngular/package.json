@@ -1,0 +1,25 @@
+{
+  "name": "bootcampifoodjs",
+  "version": "1.0.0",
+  "description": "Meus exercícios do bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node build/index.js",
+    "start2": "npx tsc && node build/variaveis.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielZornek/BootcampIfoodJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielZornek/BootcampIfoodJS/issues"
+  },
+  "homepage": "https://github.com/DanielZornek/BootcampIfoodJS#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
