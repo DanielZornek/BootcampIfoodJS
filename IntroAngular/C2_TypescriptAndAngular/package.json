@@ -7,6 +7,7 @@
     "start": "npx tsc && node build/index.js",
     "start2": "npx tsc && node build/variaveis.js",
     "start3": "npx tsc && node build/functions.js",
+    "start4": "npx tsc && node build/interfaces.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
